@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 
 public class SrSem {
 
-    public ArrayList<String[]> list = new ArrayList<String[]>();
+    public ArrayList<Student> students = new ArrayList<Student>();
 
     public void read() {
         try {
@@ -12,7 +12,7 @@ public class SrSem {
 		    Scanner fileBot = new Scanner(info);
 		    while (fileBot.hasNextLine()) {
 		    	String data = fileBot.nextLine();
-                list.add(data.split(","));
+                students.add(new Student(data.split(",")));
             }
 		    fileBot.close();
         }
@@ -21,7 +21,7 @@ public class SrSem {
             e.printStackTrace();
         }
 
-        System.out.println(list.get(0)[0]);
+        System.out.println(students.get(1));
     }
 
     

@@ -12,16 +12,17 @@ public class SrSem {
 		    Scanner fileBot = new Scanner(info);
 		    while (fileBot.hasNextLine()) {
 		    	String data = fileBot.nextLine();
-                students.add(new Student(data.split(",")));
+                students.add(new Student(data));
             }
 		    fileBot.close();
+            students.remove(0);
         }
         catch (FileNotFoundException e) {
             System.out.println("there was an error. try to fix it or something idk.");
             e.printStackTrace();
         }
 
-        System.out.println(students.get(1));
+        System.out.println(students.get(0));
     }
 
     

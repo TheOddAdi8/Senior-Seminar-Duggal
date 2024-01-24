@@ -66,7 +66,7 @@ public class Student {
                 case "To Read or Not To Read? Interning in Publishing":
                     choices[i] = 17;
                     break;
-                case "What Is Research When It's Not a R�sum� Builder?":
+                case "What Is Research When It's Not a Resume Builder?":
                     choices[i] = 18;
                     break;
                 default:

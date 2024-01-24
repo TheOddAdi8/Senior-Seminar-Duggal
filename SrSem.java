@@ -22,7 +22,9 @@ public class SrSem {
             e.printStackTrace();
         }
 
-        System.out.println(students.get(0));
+        for (Student student : students) {
+            System.out.println(student);
+        }
     }
 
     

@@ -74,11 +74,15 @@ public class Student {
             }
         }
     }
-    public String get(int arrPos) {
+    public String getInfo(int arrPos) {
         return info[arrPos];
     }
 
+    public int getChoices(int arrPos) {
+        return choices[arrPos];
+    }
+
     public String toString() {
-        return name + ", " + email + ", " + choices[0];
+        return name + ", " + email + ", " + choices[0] + ", " + choices[1] + ", " + choices[2] + ", " + choices[3] + ", " + choices[4];
     }
 }

@@ -22,11 +22,30 @@ public class SrSem {
             e.printStackTrace();
         }
 
+        /*
         for (Student student : students) {
             System.out.println(student);
         }
+        */
     }
 
-    
+    public void sort(int choice) {
+        int counter;
+        int max;
+        int maxIndex;
+        
+        for (int i = 1; i <= 18; i++) {
+            counter = 0;
+            for (Student student : students) {
+                if (student.getChoices(choice) == i) {
+                    counter++;
+                }
+            }
+            if (counter > max) {
+                max = counter;
+                
+            }
+        }
+}    
         
 }

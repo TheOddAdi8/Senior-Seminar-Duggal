@@ -29,22 +29,31 @@ public class SrSem {
         */
     }
 
-    public void sort(int choice) {
+    public int sort(int choice, String option) {
+        choice -= 1;
         int counter;
-        int max;
-        int maxIndex;
+        int max = 0;
+        int maxIndex = -1;
         
-        for (int i = 1; i <= 18; i++) {
+        for (int i = 0; i < 18; i++) {
             counter = 0;
-            for (Student student : students) {
-                if (student.getChoices(choice) == i) {
+            for (Student person : students) {
+                if (person.getChoices(choice) == i + 1) {
                     counter++;
                 }
             }
             if (counter > max) {
                 max = counter;
+                maxIndex = i + 1;
                 
             }
+        }
+
+        if (option.equals("max")) {
+            return max;
+        }
+        else {
+            return maxIndex;
         }
 }    
         

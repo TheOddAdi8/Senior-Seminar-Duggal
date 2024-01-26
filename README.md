@@ -8,3 +8,6 @@ I'm changing my idea a bit: anyone who doesn't fit into the seminar will have a 
 
 ## 1/22/24
 I created a new class called "Student.java" and it will contain the info of every student. Every student is placed in an ArrayList called "students". Using a case switch, I'll be converting long Strings such as "Adventure Calls: The Benefits and Challenges of Study Abroad" to a simple int like 1.
+
+## 1/26/24
+I have successfully found out the most popular sessions from each choice and how many people picked each session (ex: 17 people picked session 15 as their first choice).

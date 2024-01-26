@@ -22,7 +22,9 @@ public class GrandMaster { //tester
 
         SrSem s1 = new SrSem();
         s1.read();
-
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i + ": choice " + s1.sort(i, "choice") + " with " + s1.sort(i, "max") + " people");
+        }
         System.out.println("");
     }
 }

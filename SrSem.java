@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 public class SrSem {
 
     public ArrayList<Student> students = new ArrayList<Student>();
+    public ArrayList<Seminar> seminars = new ArrayList<Seminar>(); 
 
     public void read() {
         try {

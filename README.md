@@ -11,3 +11,6 @@ I created a new class called "Student.java" and it will contain the info of ever
 
 ## 1/26/24
 I have successfully found out the most popular sessions from each choice and how many people picked each session (ex: 17 people picked session 15 as their first choice).
+
+## 1/30/24
+I heavily cleaned up data (removed useless data such as submission time), created a new method that finds the most popular choice based on a point ranking system.

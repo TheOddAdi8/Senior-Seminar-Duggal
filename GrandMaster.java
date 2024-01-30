@@ -23,7 +23,7 @@ public class GrandMaster { //tester
         SrSem s1 = new SrSem();
         s1.read();
         //System.out.println("Choice " + s1.sort("choice") + " with " + s1.sort("max") + " people");
-        System.out.println(s1.sessionsChosen[1]);
+        System.out.println(s1.mostPopular());
         System.out.println("");
     }
 }

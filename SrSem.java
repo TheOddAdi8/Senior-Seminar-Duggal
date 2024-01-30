@@ -43,6 +43,20 @@ public class SrSem {
         */
     }
 
+    public String mostPopular() {
+        int max = 0;
+        int maxIndex = -0;
+
+        for (int i = 0; i < 18; i++) {
+            if (sessionsChosen[i] > max) {
+                max = sessionsChosen[i];
+                maxIndex = i;
+            }
+        }
+
+        return "Choice " + (maxIndex + 1) + " has " + max + " points and is the most popular";
+    }
+
     public int sort(String option) {
         int counter = 0;
         int max = 0;

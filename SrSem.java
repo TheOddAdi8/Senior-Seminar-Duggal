@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 public class SrSem {
 
     public ArrayList<Student> students = new ArrayList<Student>();
-    public ArrayList<Seminar> seminars = new ArrayList<Seminar>(); 
+    public ArrayList<Session> seminars = new ArrayList<Session>(); 
     
     public int[] sessionsChosen = new int[18];
     public int[] tempChoices = new int[5];
@@ -45,7 +45,7 @@ public class SrSem {
 
     public String mostPopular() {
         int max = 0;
-        int maxIndex = -0;
+        int maxIndex = 0;
 
         for (int i = 0; i < 18; i++) {
             if (sessionsChosen[i] > max) {

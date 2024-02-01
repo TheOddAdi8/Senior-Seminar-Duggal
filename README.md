@@ -14,3 +14,6 @@ I have successfully found out the most popular sessions from each choice and how
 
 ## 1/30/24
 I heavily cleaned up data (removed useless data such as submission time), created a new method that finds the most popular choice based on a point ranking system.
+
+##2/1/24
+Today I calculated how many people want to participate in the most popular choice, and I began setting up Session.java

@@ -20,10 +20,12 @@ public class GrandMaster { //tester
     public static void main(String[] args) {
         clear();
 
-        SrSem s1 = new SrSem();
-        s1.read();
+        SrSem srsem = new SrSem();
+        srsem.read();
+
         //System.out.println("Choice " + s1.sort("choice") + " with " + s1.sort("max") + " people");
-        System.out.println(s1.mostPopular());
+        System.out.println(srsem.mostPopular());
+        //System.out.println();
         System.out.println("");
     }
 }

@@ -19,6 +19,8 @@ public class SrSem {
                 String data = fileBot.nextLine();
                 if (index != 0) {
                     students.add(new Student(data));
+                    seminars.add(new Session(data));
+                    
                     tempChoices = students.get(index - 1).getAllChoices();
                     for (int i = 0; i < 5; i++) {
                         if (tempChoices[i] > 0) {
@@ -32,7 +34,7 @@ public class SrSem {
             students.remove(0);
         }
         catch (FileNotFoundException e) {
-            System.out.println("there was an error. try to fix it or something idk.");
+            System.out.println("There was an error so try to fix it or something");
             e.printStackTrace();
         }
 
@@ -41,6 +43,7 @@ public class SrSem {
             System.out.println(student);
         }
         */
+
     }
 
     public String mostPopular() {
@@ -54,7 +57,9 @@ public class SrSem {
             }
         }
 
-        return "Choice " + (maxIndex + 1) + " has " + max + " points and is the most popular";
+        sort("max");
+
+        return "Choice " + (maxIndex + 1) + " has " + max + " points and is the most popular with " + sort("max") + " votes index: " + sort("maxIndex");
     }
 
     public int sort(String option) {

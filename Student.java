@@ -15,6 +15,7 @@ public class Student {
         for (int i = 0; i < 5; i++) {
             choices[i] = Integer.parseInt(info[i + 3]);
         }
+        
     }
     public String getInfo(int arrPos) {
         return info[arrPos];

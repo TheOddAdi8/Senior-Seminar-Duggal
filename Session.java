@@ -11,7 +11,7 @@ public class Session {
     public ArrayList<String> info;
     public ArrayList<Student> seminarPeople = new ArrayList<Student>();
 
-    public Session(String information) {
+    public Session(int ID) {
         
         arrInfo = information.split(",");
         info = new ArrayList<String>(Arrays.asList(arrInfo));
@@ -30,5 +30,9 @@ public class Session {
         //    System.out.println(s);
         //}
 
+    }
+
+    public int getID() {
+        return sessionID;
     }
 }

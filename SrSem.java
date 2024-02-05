@@ -5,7 +5,8 @@ import java.io.FileNotFoundException;
 public class SrSem {
 
     public ArrayList<Student> students = new ArrayList<Student>();
-    public ArrayList<Session> seminars = new ArrayList<Session>(); 
+    //public ArrayList<Session> seminars = new ArrayList<Session>(); 
+    public Session[][] schedule = new Session[5][5];
     
     public int[] sessionsChosen = new int[18];
     public int[] tempChoices = new int[5];
@@ -19,7 +20,9 @@ public class SrSem {
                 String data = fileBot.nextLine();
                 if (index != 0) {
                     students.add(new Student(data));
-                    seminars.add(new Session(data));
+                    if (index <= 18) {
+                        //seminars.add(new Session(data));
+                    }
                     
                     tempChoices = students.get(index - 1).getAllChoices();
                     for (int i = 0; i < 5; i++) {
@@ -89,6 +92,12 @@ public class SrSem {
         else {
             return maxIndex;
         }
-}    
+    }
+
+    public void sortSession() {
+        for (Session session : seminars) {
+
+        }
+    }
         
 }

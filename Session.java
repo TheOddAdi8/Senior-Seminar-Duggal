@@ -3,7 +3,8 @@ import java.util.Arrays;
 
 public class Session {
     private String sessionName;
-    public int sessionID;
+    private int sessionID;
+    private String presenter;
 
     public String[] arrInfo = new String[11];
 
@@ -18,11 +19,16 @@ public class Session {
         for (int i = 0; i < 8; i++) {
             info.remove(0);
         }
-        
 
-        for (String s : info) {
-            //System.out.println(s);
-        }
+        sessionName = info.get(0);
+        sessionID = Integer.parseInt(info.get(1));
+        presenter = info.get(2);
+        
+        System.out.println(sessionID + ". " + presenter + ", " + sessionName);
+
+        //for (String s : info) {
+        //    System.out.println(s);
+        //}
 
     }
 }
